@@ -1,2 +1,2 @@
-# Cabinet-Medical
+# Cabinet Medical
 Python Project
