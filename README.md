@@ -6,5 +6,6 @@
 - [ ] Add modify appointment app function.
 - [ ] Add prescription function ~ per rdv.
 - [ ] Add historiques des consultations de chaque patient (historique_nom patient.txt).
+
 [Part II]
-Data viz
+- Data viz
