@@ -7,7 +7,7 @@ _<ins>Part I</ins> :_
 - [x] Delete appointment should be fully functional. (Can't think of anything else to add.)
 - [x] Add prescription function should be fully functional. (Need more testing.)
 - [ ] Add historiques des consultations de chaque patient (historique_nom patient.txt).
-- [ ] Update the first cell and remove duplicate functions.
+- [ ] Update the first cell, remove duplicate functions and EDIT THE ONES AFFECTED WITH THE DELETION.
 
 _<ins>Part II</ins> :_
 - Data viz
