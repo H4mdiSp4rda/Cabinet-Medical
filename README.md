@@ -1,14 +1,23 @@
 ## Cabinet Medical
 #### Python Project
-_<ins>Part I</ins> :_
+_<ins>Part I</ins> : DONE_ 
 - [x] Add/delete patient should be fully functional. (Can't think of anything else to add.)
 - [x] Add appointment should be fully functional. (Can't think of anything else to add.)
 - [x] Modify appointment should be fully functional. (Can't think of anything else to add.)
 - [x] Delete appointment should be fully functional. (Can't think of anything else to add.)
-- [x] Add prescription function should be fully functional. (Need more testing.)
-- [ ] Add historiques des consultations de chaque patient (historique_nom patient.txt).
+- [x] Add prescription function should be fully functional. (Can't think of anything else to add.)
+- [x] Add historiques should be fully functional. (Can't think of anything else to add.)
 - [ ] Update the first cell, remove duplicate functions and EDIT THE ONES AFFECTED WITH THE DELETION.
 
-_<ins>Part II</ins> :_
-- Data viz
+_<ins>Part II: Data Visualization</ins> :_
+- [ ] Créer une fonction qui permet de tracer la courbe de nombre des consultations pour
+chaque mois.
+- [ ] Créer une fonction qui permet de tracer la courbe de nombre des consultations pour
+chaque année.
+
+_<ins>Part III:</ins> :_
+- [ ] cmd Menu
+
+
+
  
