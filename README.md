@@ -7,7 +7,7 @@ _<ins>Part I</ins> : DONE_
 - [x] Delete appointment should be fully functional. (Can't think of anything else to add.)
 - [x] Add prescription function should be fully functional. (Can't think of anything else to add.)
 - [x] Add historiques should be fully functional. (Can't think of anything else to add.)
-- [ ] Update the first cell, remove duplicate functions and EDIT THE ONES AFFECTED WITH THE DELETION.
+- [ ] Update the first cell, remove duplicate functions and EDIT THE ONES AFFECTED WITH THE DELETION (DONE ONLY FOR menu.py).
 
 _<ins>Part II: Data Visualization</ins> : DONE_
 - [x] Créer une fonction qui permet de tracer la courbe de nombre des consultations pour
@@ -16,7 +16,7 @@ chaque mois. Function works. Needs to handle exception errors when it comes to x
 chaque année. Function works. Needs to handle exception errors when it comes to x-axis length when there isn't enough data(low appointment occurrences.)
 
 _<ins>Part III:</ins> :_
-- [ ] cmd Menu
+- [x] cmd Menu (Need more testing.)
 
 
 
