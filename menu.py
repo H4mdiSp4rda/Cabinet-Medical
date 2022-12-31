@@ -1,12 +1,7 @@
-
-#from project_py import *
-
 import os
-
 os.system("pause")
 import re
 from datetime import datetime
-import os
 import matplotlib.pyplot as plt
 import pandas as pd
 import calendar
@@ -14,10 +9,21 @@ import calendar
 
 #Dics used:
 DPatient={"cin":[], "nom":[], "prenom":[], "sexe": [],"age": []}
-rdvs={"cin":[], "date":[], "time":[]}
-
 
 ##Repeatedly used functions:
+
+
+def check_and_create_file():
+    if not os.path.exists("DPatient.txt"):
+        response = input("DPatient.txt file not found in current directory. Create new file (y/n)? ")
+        if response.lower() == 'y':
+            with open("DPatient.txt", 'w') as f:
+                print("New file created.")
+        else:
+            print("Aborting.")
+    else:
+        print("DPatient.txt file found in current directory.")
+
 def get_cin():
     print("Enter 'Abort' to cancel the operation at any step!")
     while True:
@@ -779,36 +785,38 @@ def plot_consultations_per_year():
 
 # create a dictionary to map user input to functions
 options = {
-  1: add_patient,
-  2: delete_patient,
-  3: add_appointment,
-  4: edit_appointment,
-  5: delete_appointment,
-  6: create_prescription,
-  7: historique_patient,
-  8: plot_consultations_per_month,
-  9: plot_consultations_per_year,
+  1: check_and_create_file,
+  2: add_patient,
+  3: delete_patient,
+  4: add_appointment,
+  5: edit_appointment,
+  6: delete_appointment,
+  7: create_prescription,
+  8: historique_patient,
+  9: plot_consultations_per_month,
+  10: plot_consultations_per_year,
 }
 
 while True:
   print("Welcome to the patient management system")
   print("Please select an option:")
-  print("1. Create patient")
-  print("2. Delete patient")
-  print("3. Add appointment")
-  print("4. Edit appointment")
-  print("5. Delete appointment")
-  print("6. Create prescription")
-  print("7. View patient history")
-  print("8. Plot consultations per month")
-  print("9. Plot consultations per year")
-  print("10. Quit")
+  print("1. Create DPatient.txt file")
+  print("2. Create patient")
+  print("3. Delete patient")
+  print("4. Add appointment")
+  print("5. Edit appointment")
+  print("6. Delete appointment")
+  print("7. Create prescription")
+  print("8. View patient history")
+  print("9. Plot consultations per month")
+  print("10. Plot consultations per year")
+  print("11. Quit")
   try:
     choice = int(input("Enter your choice: "))
   except ValueError:
     print("Invalid input, please try again")
     continue
-  if choice == 10:
+  if choice == 11:
     break
   if choice in options:
     options[choice]()
