@@ -15,7 +15,7 @@ chaque mois. Function works. Needs to handle exception errors when it comes to x
 - [x] Créer une fonction qui permet de tracer la courbe de nombre des consultations pour
 chaque année. Function works. Needs to handle exception errors when it comes to x-axis length when there isn't enough data(low appointment occurrences.)
 
-_<ins>Part III:</ins> :_
+_<ins>Part III: Py Script</ins> DONE_
 - [x] cmd Menu (Need more testing.)
 
 
