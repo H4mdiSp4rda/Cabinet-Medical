@@ -151,7 +151,6 @@ def add_patient():
         else:
             print("Invalid CIN. Please enter an 8-digit integer.")
     
-    # Rest of the function remains the same
     while True:
         nom = input('Please enter a First Name:')
         if nom.lower() == "abort":
@@ -182,15 +181,26 @@ def add_patient():
             print("Invalid sex. Please enter either 'Male' or 'Female'.")
             
     while True:
-        age = input("Please enter the patient's age:")
+        age = input("Please enter the patient's age. Enter 'inf' for baby:")
         if age.lower() == "abort":
             print("Operation aborted.")
-            return
+            break
+
+        if age.lower() == "inf":
+            while True:
+                age = input("Please enter the baby's age:")
+                if age.isdigit() and 1 <= int(age) <= 12:
+                    break
+                elif age.lower() == "abort":
+                    print("Operation aborted.")
+                    break
+                else:
+                    print("Invalid age. Please enter a number between 1 and 12.")
 
         if age.isdigit() and int(age) > 0:
             break
         else:
-            print("Invalid age. Please enter a positive integer.")
+            print("Invalid age. Please enter a valid input: '+int' or 'inf'.")
     
     # Add the patient data to the dictionary and text file
     DPatient["cin"].append(cin)
